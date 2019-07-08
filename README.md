@@ -10,5 +10,4 @@ I'll be adding more to this repository as we move through the Wyncode curriculum
 
 Best,
 
-Jamie
-
+Jamie & MITCH:)))) 🥂
