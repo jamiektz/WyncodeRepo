@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(wall.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background-color: #F5E906;
+    opacity: .85;
+    z-index: 2;
+}   
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+.count {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.6rem;
+    color: #F15A29;
+    text-shadow: 1.5px 1.5px black;
+    line-height: 40%;
+    margin-right: 3px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: 100px;
+
+}
+
+.bottle {
+    /* making the images width 100 actually shrinks them, fill full grid allocated space */
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bottle:hover {
+    transform: scale(1.1); 
+}
+
+.bottle.drank {
+    visibility: hidden;
+    opacity: 0;
+}
